@@ -1,4 +1,5 @@
 ## Speed analysis
+## Sequence data not available, so the first part of this code will not run.
 
 rm(list=ls())
 dev.off()
