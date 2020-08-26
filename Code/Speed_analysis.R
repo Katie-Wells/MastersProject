@@ -134,6 +134,14 @@ AIC(model4)
 ## 65.42898
 
 ## NULL model has lowest AIC, but Model 2 has less than 2 AIC points
+## Check the plots:
+## Not perfect, but these are ok.
+hist(model2$residuals)
+
+## Normal Q-Q looks good, residuals vs fitted isn't ideal, but is ok
+par(mfrow = c(2, 2))
+plot(model2)
+dev.off()
 
 ## Fox
 ## NULL:
@@ -166,6 +174,16 @@ AIC(model8)
 ## 98.77944
 
 ## NULL model has lowest AIC, but Model 6 has less than 2 AIC points
+
+## Check plots:
+## This is normally distributed
+hist(model6$residuals)
+
+## Again, the normal Q-Q looks good, the residuals vs fitted is not ideal.
+## I will remember this when I discuss my results.
+par(mfrow = c(2,2))
+plot(model6)
+dev.off()
 
 ## Plotting from predicted values:
 
